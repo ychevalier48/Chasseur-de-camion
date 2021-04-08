@@ -6,7 +6,6 @@ from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestClassifier
 from PIL import Image
 import streamlit as st
-import joypy
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -404,9 +403,6 @@ if selected_week == '4 semaines':
     st.plotly_chart(fig4)
 
 
-# st.subheader('Nombre annonces par modèle et par prix (TTC - €):')
-# joypy.joyplot(data=ridgeline_plot, by='Modele', legend=True, color="#f63366", linecolor="#f63366", overlap=0, grid=True)
-# st.pyplot()
 ### gif from local file
 @st.cache
 def get_base64_of_bin_file(bin_file):
