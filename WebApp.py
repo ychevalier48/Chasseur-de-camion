@@ -29,7 +29,7 @@ st.write(
     "A partir d'une base de donnees de plus de 1000 annonces nous avons developpé un algorithme d'intelligence artificielle capable de vous proposer le prix auquel des vehicules similaires au vôtre sont vendus ainsi que les délais selon votre prix rêvé !")
 
 # Open and display an image
-image = Image.open('/Users/mackookproyann/PycharmProjects/pythonProject/Logo.png')
+image = Image.open('https://github.com/ychevalier48/Chasseur-de-camion/blob/8b97d230e508a117a03b3a4092929cdb1e1b4747/Logo.png')
 st.sidebar.image(image, use_column_width=True)
 
 # get the data
