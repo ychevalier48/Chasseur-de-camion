@@ -33,17 +33,17 @@ image = Image.open('Logo.png')
 st.sidebar.image(image, use_column_width=True)
 
 # get the data
-df = pd.read_csv('/Users/mackookproyann/PycharmProjects/pythonProject/012021_bdd occasions - BdD.csv')
-df1 = pd.read_csv('/Users/mackookproyann/PycharmProjects/pythonProject/012021_bdd occasions - BdD S1.csv')
-df2 = pd.read_csv('/Users/mackookproyann/PycharmProjects/pythonProject/012021_bdd occasions - BdD S2.csv')
-df3 = pd.read_csv('/Users/mackookproyann/PycharmProjects/pythonProject/012021_bdd occasions - BdD S4.csv')
-df4 = pd.read_csv('/Users/mackookproyann/PycharmProjects/pythonProject/012021_bdd occasions - BdD_plot.csv')
+df = pd.read_csv('012021_bdd occasions - BdD.csv')
+df1 = pd.read_csv('012021_bdd occasions - BdD S1.csv')
+df2 = pd.read_csv('012021_bdd occasions - BdD S2.csv')
+df3 = pd.read_csv('012021_bdd occasions - BdD S4.csv')
+df4 = pd.read_csv('012021_bdd occasions - BdD_plot.csv')
 annonces = pd.read_csv(
-    '/Users/mackookproyann/PycharmProjects/pythonProject/012021_bdd occasions - Nbr annonces_département.csv')
+    '012021_bdd occasions - Nbr annonces_département.csv')
 geo_vendu = pd.read_csv(
-    '/Users/mackookproyann/PycharmProjects/pythonProject/012021_bdd occasions - %S4_département.csv')
+    '012021_bdd occasions - %S4_département.csv')
 corr_prix = pd.read_csv(
-    '/Users/mackookproyann/PycharmProjects/pythonProject/012021_bdd occasions - correlation_prix.csv')
+    '012021_bdd occasions - correlation_prix.csv')
 
 # Split the data into independent 'X' and dependent 'Y' variables
 Y = df['Prix (TTC)']
@@ -300,7 +300,7 @@ st.write('Semaine 4 : ' + str(prediction4_text)+'. Avec un score de précision d
 ### gif from local file
 @st.cache
 def get_base64_of_bin_file(bin_file):
-    with open("/Users/mackookproyann/PycharmProjects/pythonProject/ gif_options_V3.gif", 'rb') as f:
+    with open(" gif_options_V3.gif", 'rb') as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
@@ -406,7 +406,7 @@ if selected_week == '4 semaines':
 ### gif from local file
 @st.cache
 def get_base64_of_bin_file(bin_file):
-    with open("/Users/mackookproyann/PycharmProjects/pythonProject/img_garantie.png", 'rb') as f:
+    with open("img_garantie.png", 'rb') as f:
         data = f.read()
     return base64.b64encode(data).decode()
 
@@ -490,6 +490,6 @@ st.write(
     "Sur les sites actuels soit les recherches sont limitées avec à chaque fois des conditions à accepter pour être spamé, soit il n'y a pas les cotes des VUL, soit les deux !")
 st.write('Transférez à un ami à chaque fois que vous avez vécu une des situations ci-dessous : ')
 
-video_file = open('/Users/mackookproyann/PycharmProjects/pythonProject/Mon film 7.mp4', 'rb')
+video_file = open('Mon film 7.mp4', 'rb')
 video_bytes = video_file.read()
 st.video(video_bytes)
